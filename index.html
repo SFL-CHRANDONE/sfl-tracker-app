@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#16251b">
+    <title>SFL Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="header-left">
+        <!-- Mobile menu button -->
+        <button id="menuBtn" class="menu-btn" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- App title + connection status -->
+        <div class="header-title">
+          <h2>🌻 SFL Tracker</h2>
+          <div class="status">
+            <span id="statusDot" class="dot offline"></span>
+            <strong id="connection">Offline</strong>
+          </div>
+        </div>
+      </div>
+      <!-- Main sync button -->
+      <button id="refreshBtn" class="sync-btn">
+        ↻ Sync
+      </button>
+    </header>
+    <nav class="bottom-nav"></nav>
+    <!-- Script Area -->
+    <script src="./tab.js"></script>
+  </body>
+</html>
