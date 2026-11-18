@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#16251b">
     <title>SFL Tracker</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="manifest.json">    
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
     <header class="top-header">
@@ -32,6 +33,11 @@
     </header>
     <nav class="bottom-nav"></nav>
     <!-- Script Area -->
-    <script src="./tab.js"></script>
+    <script src="/tab.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
   </body>
 </html>
